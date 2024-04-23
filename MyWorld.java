@@ -7,7 +7,9 @@ public class MyWorld extends World
         super(600, 400, 1); 
         Goof goof = new Goof();
         Banana banana = new Banana();
+        Background background = new Background();
         addObject(goof, 100, 100);
         addObject(banana, 600, 100);
+        addObject(background, 300, 200);
     }
 }
