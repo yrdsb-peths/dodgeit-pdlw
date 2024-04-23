@@ -1,6 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
+    private int score = 0;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -16,5 +17,16 @@ public class MyWorld extends World
         addObject(yusuf, 100, 100);
         addObject(banana, 600, 200);
         yusuf.getImage().scale(100, 80);
+        showScore();
+    }
+    public void increaseScore() 
+    {
+        score++;
+        showScore();
+    }
+    
+    private void showScore() 
+    {
+        showText("Score: " + score, 540, 20);
     }
 }
