@@ -9,6 +9,7 @@ public class CopyOfBanana extends Actor
         if(getX() == 0)
         {
             resetBanana();
+            ((MyWorld)getWorld()).increaseScore();
         }
         if(isTouching(Goof.class))
         {
@@ -21,6 +22,8 @@ public class CopyOfBanana extends Actor
             TongueFace tongue = new TongueFace();
             tongue.getImage().scale(600, 400);
             getWorld().addObject(tongue, 300, 200);
+            getWorld().showText("",110,20);
+            getWorld().showText("",110,40);
             getWorld().removeObject(this);
             Greenfoot.stop();
         }
