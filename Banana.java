@@ -20,13 +20,9 @@ public class Banana extends Actor
     public void resetBanana()
     {
         int x = Greenfoot.getRandomNumber(2);
-        if(x == 0)
-        {
-            setLocation(600,100);
-        }
-        else
-        {
-            setLocation(600,300);
-        }
+        int y = Greenfoot.getRandomNumber(400);
+     
+            setLocation(600,y);
+        
     }
 }
