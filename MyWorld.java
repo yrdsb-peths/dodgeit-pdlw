@@ -8,9 +8,9 @@ public class MyWorld extends World
         Goof goof = new Goof();
         Banana banana = new Banana();
         Background background = new Background();
-        addObject(goof, 100, 100);
-        addObject(banana, 600, 100);
         addObject(background, 300, 200);
         background.getImage().scale(600, 400);
+        addObject(goof, 100, 100);
+        addObject(banana, 600, 100);
     }
 }
