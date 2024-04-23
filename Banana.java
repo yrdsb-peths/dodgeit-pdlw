@@ -12,6 +12,8 @@ public class Banana extends Actor
         }
         if(isTouching(Goof.class))
         {
+            TongueFace tongue = new TongueFace();
+            getWorld().addObject(tongue, 300, 50);
             getWorld().removeObject(this);
         }
     }
