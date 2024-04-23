@@ -8,6 +8,6 @@ Ensure greenfoot is installed.
 Open project.greenfoot in greenfoot.
 Wait for world to load.
 Press run.
-Ensure the banana does not hit the baby. 
-Each mouse click will move the baby to the opposite vertical end of the world.
-If the banana hits the baby, the game is over and the face will appear.
+Ensure the eggs and ships do not hit the man.
+Use "j" key to move downward, use "h" key to move up.
+If the eggs or ships hit the man, the game is over and you must press reset.
