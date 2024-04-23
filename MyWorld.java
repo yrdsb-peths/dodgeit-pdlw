@@ -11,5 +11,6 @@ public class MyWorld extends World
         addObject(goof, 100, 100);
         addObject(banana, 600, 100);
         addObject(background, 300, 200);
+        background.getImage().scale(600, 400);
     }
 }
