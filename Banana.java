@@ -22,8 +22,7 @@ public class Banana extends Actor
             TongueFace tongue = new TongueFace();
             tongue.getImage().scale(600, 400);
             getWorld().addObject(tongue, 300, 200);
-            getWorld().showText("",110,20);
-            getWorld().showText("",110,40);
+            getWorld().showText("Ctrl + T to reset",100,50);
             getWorld().removeObject(this);
             Greenfoot.stop();
         }
