@@ -10,7 +10,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         addObject(background, 300, 200);
         addObject(title, 300, 200);
-        title.getImage().scale(350, 100);
+        title.getImage().scale(400, 125);
         background.getImage().scale(600, 400);
         showText("Ctrl + R to begin",100,50);
     }
