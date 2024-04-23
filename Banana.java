@@ -12,10 +12,17 @@ public class Banana extends Actor
         }
         if(isTouching(Goof.class))
         {
+            Splode splode = new Splode();
+            int x = getX();
+            int yy = getY();
+            getWorld().addObject(splode, x, yy-60);
+            splode.getImage().scale(200, 200);
+            Greenfoot.delay(100);
             TongueFace tongue = new TongueFace();
             tongue.getImage().scale(600, 400);
             getWorld().addObject(tongue, 300, 200);
             getWorld().removeObject(this);
+            Greenfoot.stop();
         }
     }
     public void resetBanana()
