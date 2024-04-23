@@ -10,6 +10,10 @@ public class Banana extends Actor
         {
             resetBanana();
         }
+        if(isTouching(Goof.class))
+        {
+            getWorld().removeObject(this);
+        }
     }
     public void resetBanana()
     {
