@@ -4,17 +4,14 @@ public class Goof extends Actor
     boolean atTop = true;
     public void act()
     {
-        if(Greenfoot.mouseClicked(null))
+        setRotation(90);
+        if(Greenfoot.isKeyDown("j"))
         {
-            atTop = !atTop;
+            move(3);
         }
-        if(atTop)
+        else if(Greenfoot.isKeyDown("h"))
         {
-            setLocation(100,100);
-        }
-        else
-        {
-            setLocation(100,300); 
+            move(-3);
         }
     }
 }
